@@ -1,23 +1,28 @@
-import Header from './components/Header'
-import Hero from './components/Hero'
-import Logos from './components/Logos'
-import Services from './components/Services'
-import Work from './components/Work'
-import Footer from './components/Footer'
-import Floaters from './components/Floaters'
+import { BrowserRouter as Router, Routes, Route } from 'react-router-dom';
+import Header from './components/Header';
+import Home from './pages/Home';
+import Services from './pages/Services';
+import Work from './pages/Work';
+import About from './pages/About';
+import Contact from './pages/Contact';
 
 function App() {
   return (
-    <>
-      <Header />
-      <Floaters />
-      <Hero />
-      <Logos />
-      <Services />
-      <Work />
-      <Footer />
-    </>
-  )
+    <Router>
+      <div className="app">
+        <Header />
+        <main>
+          <Routes>
+            <Route path="/" element={<Home />} />
+            <Route path="/services" element={<Services />} />
+            <Route path="/work" element={<Work />} />
+            <Route path="/about" element={<About />} />
+            <Route path="/contact" element={<Contact />} />
+          </Routes>
+        </main>
+      </div>
+    </Router>
+  );
 }
 
-export default App
+export default App;
