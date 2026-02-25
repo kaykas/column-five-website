@@ -1,16 +1,90 @@
-# React + Vite
+# Column Five Media - AI-Forward Content Agency
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+Modern, responsive website for Column Five agency featuring a minimalist dark theme with glass morphism effects and premium typography.
 
-Currently, two official plugins are available:
+## Live Deployment
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react) uses [Babel](https://babeljs.io/) (or [oxc](https://oxc.rs) when used in [rolldown-vite](https://vite.dev/guide/rolldown)) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+- **Production**: https://column-five-website-ex2cn2ikx-jascha-kaykas-wolffs-projects.vercel.app
+- **GitHub Repository**: https://github.com/kaykas/column-five-website
 
-## React Compiler
+## Features
 
-The React Compiler is not enabled on this template because of its impact on dev & build performances. To add it, see [this documentation](https://react.dev/learn/react-compiler/installation).
+- ✨ Glass morphism orb hero effect with animated shimmer
+- 🎨 Modern dark theme with strategic accent colors
+- 📱 Fully responsive grid layouts
+- 🚀 Built with React + Vite for optimal performance
+- 💫 Smooth animations and transitions
+- 🎯 Component-based architecture
 
-## Expanding the ESLint configuration
+## Tech Stack
 
-If you are developing a production application, we recommend using TypeScript with type-aware lint rules enabled. Check out the [TS template](https://github.com/vitejs/vite/tree/main/packages/create-vite/template-react-ts) for information on how to integrate TypeScript and [`typescript-eslint`](https://typescript-eslint.io) in your project.
+- **Framework**: React 19
+- **Build Tool**: Vite
+- **Styling**: CSS with CSS Variables
+- **Deployment**: Vercel
+- **Version Control**: GitHub
+
+## Project Structure
+
+```
+src/
+├── components/
+│   ├── Header.jsx       # Fixed navigation header
+│   ├── Hero.jsx         # Hero section with glass orb
+│   ├── Logos.jsx        # Client logos showcase
+│   ├── Services.jsx     # Capabilities/services grid
+│   ├── Work.jsx         # Featured work portfolio
+│   ├── Footer.jsx       # Contact form and footer
+│   └── Floaters.jsx     # Background gradient effects
+├── App.jsx              # Main app component
+├── index.css            # Global styles
+└── main.jsx             # Entry point
+```
+
+## Local Development
+
+```bash
+# Install dependencies
+npm install
+
+# Start dev server
+npm run dev
+
+# Build for production
+npm run build
+
+# Preview production build
+npm run preview
+```
+
+## Design Features
+
+### Glass Morphism Orb
+- Animated shimmer effect
+- Layered gradients and shadows
+- Conic gradient backgrounds
+
+### Color System
+- Background: `#030303`
+- Cards: `#0a0a0a`
+- Text Primary: `#ffffff`
+- Text Secondary: `#888888`
+- Borders: `rgba(255, 255, 255, 0.1)`
+
+### Typography
+- Font Family: Helvetica Neue, Helvetica, Arial
+- Responsive clamp() sizing
+- Negative letter spacing for premium feel
+
+## Deployment
+
+The site is automatically deployed to Vercel on every push to the main branch.
+
+To manually deploy:
+```bash
+vercel --prod
+```
+
+## License
+
+© 2024 COLUMN FIVE. ALL RIGHTS RESERVED.
