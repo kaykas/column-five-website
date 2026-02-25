@@ -66,11 +66,11 @@ export default function Services() {
   ];
 
   return (
-    <div className="page services-page">
-      <section className="page-hero">
+    <div className="page">
+      <section className="page-hero-dark">
         <div className="container">
           <h1>Services</h1>
-          <p className="page-intro">
+          <p className="page-intro-dark">
             From strategy to execution, we help B2B brands tell stories that resonate
             with both human decision-makers and AI algorithms.
           </p>
@@ -82,9 +82,11 @@ export default function Services() {
           {services.map((category, idx) => (
             <div key={idx} className="service-category">
               <h2 className="category-title">{category.category}</h2>
-              <div className="services-list">
+              <div className="grid-2">
                 {category.items.map((service, sidx) => (
-                  <div key={sidx} className="service-detail-card">
+                  <div key={sidx} className="service-card">
+                    <div className="bracket-tl"></div>
+                    <div className="bracket-br"></div>
                     <h3>{service.title}</h3>
                     <p>{service.description}</p>
                   </div>
@@ -95,15 +97,29 @@ export default function Services() {
         </div>
       </section>
 
-      <section className="services-cta section-padding bg-white">
-        <div className="container">
-          <div className="cta-content">
-            <h2>Let's build something together</h2>
-            <p>Tell us about your project and we'll show you what's possible.</p>
-            <a href="/contact" className="btn-primary-large">Start a Project</a>
+      <div className="footer-cta">
+        <div>
+          <h2>Let's build something together</h2>
+          <p style={{ marginTop: '20px' }}>Tell us about your project and we'll show you what's possible.</p>
+          <div className="footer-links">
+            <a href="https://linkedin.com/company/column-five" target="_blank" rel="noopener noreferrer">LinkedIn</a>
+            <a href="https://twitter.com/columnfive" target="_blank" rel="noopener noreferrer">Twitter</a>
+            <a href="https://instagram.com/columnfive" target="_blank" rel="noopener noreferrer">Instagram</a>
           </div>
         </div>
-      </section>
+        <div className="footer-form">
+          <div className="input-group">
+            <input type="text" placeholder="Name" />
+          </div>
+          <div className="input-group">
+            <input type="email" placeholder="Work Email" />
+          </div>
+          <div className="input-group">
+            <input type="text" placeholder="Company URL" />
+          </div>
+          <button>Start a Project</button>
+        </div>
+      </div>
     </div>
   );
 }

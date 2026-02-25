@@ -1,10 +1,10 @@
 export default function Contact() {
   return (
-    <div className="page contact-page">
-      <section className="page-hero">
+    <div className="page">
+      <section className="page-hero-dark">
         <div className="container">
           <h1>Let's Talk</h1>
-          <p className="page-intro">
+          <p className="page-intro-dark">
             Tell us about your project and we'll show you what's possible.
           </p>
         </div>
@@ -15,23 +15,23 @@ export default function Contact() {
           <div className="contact-layout">
             <div className="contact-info">
               <h2>Get in Touch</h2>
-              <p>
+              <p style={{ maxWidth: '100%', lineHeight: 1.7 }}>
                 Whether you're looking to refresh your brand, scale content production,
                 or launch a new campaign, we're here to help.
               </p>
 
               <div className="contact-details">
-                <div className="detail-item">
+                <div className="detail-item-dark">
                   <h3>Email</h3>
                   <p><a href="mailto:hello@columnfivemedia.com">hello@columnfivemedia.com</a></p>
                 </div>
 
-                <div className="detail-item">
+                <div className="detail-item-dark">
                   <h3>Location</h3>
                   <p>Newport Beach, California</p>
                 </div>
 
-                <div className="detail-item">
+                <div className="detail-item-dark">
                   <h3>Follow Us</h3>
                   <div className="social-links">
                     <a href="https://linkedin.com/company/column-five" target="_blank" rel="noopener noreferrer">LinkedIn</a>
@@ -42,7 +42,7 @@ export default function Contact() {
               </div>
             </div>
 
-            <div className="contact-form">
+            <div className="contact-form-dark">
               <form>
                 <div className="form-group">
                   <label htmlFor="name">Name *</label>
@@ -80,7 +80,7 @@ export default function Contact() {
                   </select>
                 </div>
 
-                <button type="submit" className="btn-primary-large">Send Message</button>
+                <button type="submit">Send Message</button>
               </form>
             </div>
           </div>

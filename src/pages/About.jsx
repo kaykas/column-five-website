@@ -1,10 +1,16 @@
 export default function About() {
+  const clients = [
+    "Microsoft", "Adobe", "Amazon", "Netflix", "Salesforce", "Dropbox",
+    "J.P. Morgan", "Charles Schwab", "Intuit", "Deloitte", "Forrester", "UCLA",
+    "Instacart", "Zendesk", "VideoAmp", "Vercel", "Narrative 4", "Teach For America"
+  ];
+
   return (
-    <div className="page about-page">
-      <section className="page-hero">
+    <div className="page">
+      <section className="page-hero-dark">
         <div className="container">
           <h1>About Column Five</h1>
-          <p className="page-intro">
+          <p className="page-intro-dark">
             Since 2009, we've helped B2B brands tell stories that drive business results.
           </p>
         </div>
@@ -27,19 +33,19 @@ export default function About() {
               </p>
             </div>
             <div className="stats-column">
-              <div className="stat-item">
+              <div className="stat-item-dark">
                 <h3>Founded</h3>
                 <p>2009</p>
               </div>
-              <div className="stat-item">
+              <div className="stat-item-dark">
                 <h3>Location</h3>
                 <p>Newport Beach, CA</p>
               </div>
-              <div className="stat-item">
+              <div className="stat-item-dark">
                 <h3>Team Size</h3>
                 <p>~50 Employees</p>
               </div>
-              <div className="stat-item">
+              <div className="stat-item-dark">
                 <h3>Focus</h3>
                 <p>B2B SaaS Marketing</p>
               </div>
@@ -48,27 +54,27 @@ export default function About() {
         </div>
       </section>
 
-      <section className="values-section section-padding bg-white">
+      <section className="values-section section-padding">
         <div className="container">
           <h2>Our Values</h2>
-          <div className="values-grid">
-            <div className="value-card">
+          <div className="grid-2">
+            <div className="service-card">
               <h3>Be Curious</h3>
               <p>We ask questions, seek understanding, and never stop learning.</p>
             </div>
-            <div className="value-card">
+            <div className="service-card">
               <h3>Do Good Work</h3>
               <p>Excellence isn't negotiable. Every project deserves our best.</p>
             </div>
-            <div className="value-card">
+            <div className="service-card">
               <h3>Embrace Diversity</h3>
               <p>Different perspectives make us stronger and our work better.</p>
             </div>
-            <div className="value-card">
+            <div className="service-card">
               <h3>Act Courageously</h3>
               <p>The best work requires taking risks and challenging conventions.</p>
             </div>
-            <div className="value-card">
+            <div className="service-card">
               <h3>Be Good to Each Other</h3>
               <p>Partnership over vendor relationships. Transparency over politics.</p>
             </div>
@@ -79,38 +85,39 @@ export default function About() {
       <section className="clients-section section-padding">
         <div className="container">
           <h2>Clients We've Worked With</h2>
-          <div className="client-list">
-            <div className="client-name">Microsoft</div>
-            <div className="client-name">Adobe</div>
-            <div className="client-name">Amazon</div>
-            <div className="client-name">Netflix</div>
-            <div className="client-name">Salesforce</div>
-            <div className="client-name">Dropbox</div>
-            <div className="client-name">J.P. Morgan</div>
-            <div className="client-name">Charles Schwab</div>
-            <div className="client-name">Intuit</div>
-            <div className="client-name">Deloitte</div>
-            <div className="client-name">Forrester</div>
-            <div className="client-name">UCLA</div>
-            <div className="client-name">Instacart</div>
-            <div className="client-name">Zendesk</div>
-            <div className="client-name">VideoAmp</div>
-            <div className="client-name">Vercel</div>
-            <div className="client-name">Narrative 4</div>
-            <div className="client-name">Teach For America</div>
+          <div className="logos" style={{ borderTop: 'none', borderBottom: 'none', padding: '40px 0', margin: 0, flexWrap: 'wrap', justifyContent: 'flex-start', gap: '30px' }}>
+            {clients.map((client, idx) => (
+              <div key={idx} className="logo-item" style={{ flex: '0 0 auto' }}>
+                {client}
+              </div>
+            ))}
           </div>
         </div>
       </section>
 
-      <section className="about-cta section-padding bg-white">
-        <div className="container">
-          <div className="cta-content">
-            <h2>Work with us</h2>
-            <p>Let's create content that drives results for your brand.</p>
-            <a href="/contact" className="btn-primary-large">Get in Touch</a>
+      <div className="footer-cta">
+        <div>
+          <h2>Work with us</h2>
+          <p style={{ marginTop: '20px' }}>Let's create content that drives results for your brand.</p>
+          <div className="footer-links">
+            <a href="https://linkedin.com/company/column-five" target="_blank" rel="noopener noreferrer">LinkedIn</a>
+            <a href="https://twitter.com/columnfive" target="_blank" rel="noopener noreferrer">Twitter</a>
+            <a href="https://instagram.com/columnfive" target="_blank" rel="noopener noreferrer">Instagram</a>
           </div>
         </div>
-      </section>
+        <div className="footer-form">
+          <div className="input-group">
+            <input type="text" placeholder="Name" />
+          </div>
+          <div className="input-group">
+            <input type="email" placeholder="Work Email" />
+          </div>
+          <div className="input-group">
+            <input type="text" placeholder="Company URL" />
+          </div>
+          <button>Get in Touch</button>
+        </div>
+      </div>
     </div>
   );
 }
