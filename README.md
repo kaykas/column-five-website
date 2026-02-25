@@ -1,20 +1,31 @@
-# Column Five Media - Official Website Clone
+# Column Five Media - Modern Dark Design with Real Content
 
-Accurate recreation of Column Five Media's website featuring their real content, branding, and multi-page structure with authentic case studies and service offerings.
+Modern website combining the sleek dark design aesthetic you provided with Column Five Media's authentic content. Features glass morphism effects, floating gradients, and professional B2B case studies.
 
 ## Live Deployment
 
-- **Production**: https://column-five-website-j1qdvx6t4-jascha-kaykas-wolffs-projects.vercel.app
+- **Production**: https://column-five-website-kydd6t3xn-jascha-kaykas-wolffs-projects.vercel.app
 - **GitHub Repository**: https://github.com/kaykas/column-five-website
+- **Local Dev**: http://localhost:5173/
 
-## Authentic Content
+## Design Features
 
-This site features Column Five's actual content from their website:
+### Visual Aesthetic
+- ✨ **Glass morphism orb** with animated shimmer effect
+- 🌊 **Floating gradient** background effects (purple and blue)
+- 🎨 **Dark theme** (#030303 background, #ffffff text)
+- 🔲 **Corner brackets** on service cards with numbering
+- 🎭 **Mix-blend-mode** header for modern effect
+- 💫 **Smooth animations** and hover transitions
 
-### Real Client Roster
+### Authentic Column Five Content
+
+**Tagline**: "Tell a brand story that wins in AI search"
+
+**Real Clients**:
 Microsoft, Adobe, Amazon, Netflix, Salesforce, Dropbox, J.P. Morgan, Charles Schwab, Intuit, Deloitte, Forrester, UCLA, Instacart, Zendesk, VideoAmp, Teach For America, Vercel, Narrative 4
 
-### Actual Case Studies
+**Real Case Studies**:
 - **HubSpot Ventures**: Establishing Credibility Through a Sophisticated Brand
 - **Instacart Ads**: From Concept to Market in Two Weeks with 115+ Campaign Assets
 - **Fieldguide**: An In-Your-Face Awareness Campaign for an Agentic AI Solution
@@ -24,38 +35,26 @@ Microsoft, Adobe, Amazon, Netflix, Salesforce, Dropbox, J.P. Morgan, Charles Sch
 - **VideoAmp**: Thought Leadership Content Positions CEO as Industry Voice
 - **Vercel**: Developer-First Content Strategy for Next-Gen Platform
 
-### Real Services
+**Real Services**:
 - Brand Strategy & Identity
-- Content Strategy & Production
+- Content Production at Scale
 - Campaign Planning
-- Media Planning & Performance
-- SEO & AEO Consulting
+- SEO & AEO Optimization
 - Video & Motion Graphics
 - Conversational AI Experiences
-- Interactive Web Design & Development
-- Infographics & Data Visualization
-- Sales Enablement Content
+- Interactive Web Design
 - Executive Thought Leadership
+- Sales Enablement Content
 - Annual Reports & White Papers
 
 ## Site Structure
 
 ### Pages
-1. **Home** (`/`) - Hero, client logos, services preview, featured work
-2. **Services** (`/services`) - Complete service catalog organized by category
-3. **Work** (`/work`) - Portfolio of case studies with real client work
-4. **About** (`/about`) - Company story, values, team info, full client list
-5. **Contact** (`/contact`) - Contact form with proper fields for project inquiries
-
-## Features
-
-- ✨ Authentic Column Five branding and color scheme
-- 📱 Fully responsive multi-page site with React Router
-- 🎨 Professional cream/beige theme (#f7f5e7)
-- 🚀 Fast page transitions
-- 📝 Complete contact form
-- 🎯 Real case studies and client work
-- 💼 B2B-focused professional design
+1. **Home** (`/`) - Glass orb hero, client logos, capabilities grid, featured work
+2. **Services** (`/services`) - Service catalog organized by category with corner brackets
+3. **Work** (`/work`) - 8 case studies with custom background effects
+4. **About** (`/about`) - Company story, values, full client roster, founding info
+5. **Contact** (`/contact`) - Professional contact form with budget selection
 
 ## Tech Stack
 
@@ -71,33 +70,39 @@ Microsoft, Adobe, Amazon, Netflix, Salesforce, Dropbox, J.P. Morgan, Charles Sch
 ```
 src/
 ├── components/
-│   └── Header.jsx          # Navigation with React Router links
+│   └── Header.jsx          # Fixed navigation with mix-blend-mode
 ├── pages/
-│   ├── Home.jsx           # Landing page with hero and featured content
-│   ├── Services.jsx       # Complete service catalog
-│   ├── Work.jsx           # Portfolio of case studies
-│   ├── About.jsx          # Company info and values
-│   └── Contact.jsx        # Contact form and details
+│   ├── Home.jsx           # Glass orb hero, capabilities, featured work
+│   ├── Services.jsx       # Service cards with brackets
+│   ├── Work.jsx           # Portfolio with custom backgrounds
+│   ├── About.jsx          # Company info, values, clients
+│   └── Contact.jsx        # Contact form with budget selector
 ├── App.jsx                # Router configuration
-├── index.css              # Global styles and page-specific CSS
+├── index.css              # Global styles + dark theme
 └── main.jsx               # Entry point
 ```
 
 ## Design System
 
-### Color Palette (Authentic Column Five)
-- Background: `#f7f5e7` (Cream/beige)
-- Cards: `#ffffff` (White)
-- Text Primary: `#1a1a1a` (Near black)
-- Text Secondary: `#666666` (Gray)
-- Accent: `#ff6b35` (Orange)
-- Borders: `rgba(0, 0, 0, 0.1)` (Light gray)
+### Color Palette
+- Background: `#030303` (Near black)
+- Card Background: `#0a0a0a` (Slightly lighter black)
+- Text Primary: `#ffffff` (White)
+- Text Secondary: `#888888` (Gray)
+- Borders: `rgba(255, 255, 255, 0.1)` (Subtle white)
+
+### Visual Effects
+- Glass orb with conic gradient and shimmer animation
+- Floating gradient orbs (purple #4e54c8, blue #302b63)
+- Corner brackets on service cards
+- Custom work image backgrounds (gradients, geometric shapes)
+- Mix-blend-mode exclusion on header
 
 ### Typography
 - Font Family: Helvetica Neue, Helvetica, Arial
 - Responsive clamp() sizing
-- Professional weight hierarchy
-- Optimized line-height for readability
+- Uppercase nav with letter spacing
+- Italic serif for hero accent text
 
 ## Local Development
 
@@ -105,7 +110,7 @@ src/
 # Install dependencies
 npm install
 
-# Start dev server
+# Start dev server (runs on http://localhost:5173)
 npm run dev
 
 # Build for production
@@ -117,9 +122,9 @@ npm run preview
 
 ## Deployment
 
-The site is automatically deployed to Vercel on every push to the main branch.
+The site automatically deploys to Vercel on every push to main.
 
-To manually deploy:
+Manual deployment:
 ```bash
 vercel --prod
 ```
@@ -130,7 +135,7 @@ vercel --prod
 **Founders**: Jason Lankow, Ross Crooks, Josh Ritchie
 **Location**: Newport Beach, California
 **Team**: ~50 employees
-**Focus**: B2B SaaS marketing and content
+**Focus**: B2B SaaS content marketing
 
 ### Company Values
 - Be Curious
@@ -141,6 +146,6 @@ vercel --prod
 
 ## License
 
-This is a demonstration clone of Column Five Media's website. All content and branding belong to Column Five Media.
+This is a demonstration combining modern design with Column Five Media's content. All content and branding belong to Column Five Media.
 
 © 2024 Column Five Media. All Rights Reserved.
