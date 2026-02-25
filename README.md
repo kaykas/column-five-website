@@ -1,24 +1,66 @@
-# Column Five Media - AI-Forward Content Agency
+# Column Five Media - Official Website Clone
 
-Modern, responsive website for Column Five agency featuring a minimalist dark theme with glass morphism effects and premium typography.
+Accurate recreation of Column Five Media's website featuring their real content, branding, and multi-page structure with authentic case studies and service offerings.
 
 ## Live Deployment
 
-- **Production**: https://column-five-website-ex2cn2ikx-jascha-kaykas-wolffs-projects.vercel.app
+- **Production**: https://column-five-website-j1qdvx6t4-jascha-kaykas-wolffs-projects.vercel.app
 - **GitHub Repository**: https://github.com/kaykas/column-five-website
+
+## Authentic Content
+
+This site features Column Five's actual content from their website:
+
+### Real Client Roster
+Microsoft, Adobe, Amazon, Netflix, Salesforce, Dropbox, J.P. Morgan, Charles Schwab, Intuit, Deloitte, Forrester, UCLA, Instacart, Zendesk, VideoAmp, Teach For America, Vercel, Narrative 4
+
+### Actual Case Studies
+- **HubSpot Ventures**: Establishing Credibility Through a Sophisticated Brand
+- **Instacart Ads**: From Concept to Market in Two Weeks with 115+ Campaign Assets
+- **Fieldguide**: An In-Your-Face Awareness Campaign for an Agentic AI Solution
+- **J.P. Morgan Payments**: ABM Campaign Drives Growth With Key Accounts
+- **Dropbox**: Go-to-Market Recruiting Strategy Increases Brand Perception 19%
+- **Zendesk**: Content Hub Drives 40% Increase in Qualified Leads
+- **VideoAmp**: Thought Leadership Content Positions CEO as Industry Voice
+- **Vercel**: Developer-First Content Strategy for Next-Gen Platform
+
+### Real Services
+- Brand Strategy & Identity
+- Content Strategy & Production
+- Campaign Planning
+- Media Planning & Performance
+- SEO & AEO Consulting
+- Video & Motion Graphics
+- Conversational AI Experiences
+- Interactive Web Design & Development
+- Infographics & Data Visualization
+- Sales Enablement Content
+- Executive Thought Leadership
+- Annual Reports & White Papers
+
+## Site Structure
+
+### Pages
+1. **Home** (`/`) - Hero, client logos, services preview, featured work
+2. **Services** (`/services`) - Complete service catalog organized by category
+3. **Work** (`/work`) - Portfolio of case studies with real client work
+4. **About** (`/about`) - Company story, values, team info, full client list
+5. **Contact** (`/contact`) - Contact form with proper fields for project inquiries
 
 ## Features
 
-- ✨ Glass morphism orb hero effect with animated shimmer
-- 🎨 Modern dark theme with strategic accent colors
-- 📱 Fully responsive grid layouts
-- 🚀 Built with React + Vite for optimal performance
-- 💫 Smooth animations and transitions
-- 🎯 Component-based architecture
+- ✨ Authentic Column Five branding and color scheme
+- 📱 Fully responsive multi-page site with React Router
+- 🎨 Professional cream/beige theme (#f7f5e7)
+- 🚀 Fast page transitions
+- 📝 Complete contact form
+- 🎯 Real case studies and client work
+- 💼 B2B-focused professional design
 
 ## Tech Stack
 
 - **Framework**: React 19
+- **Routing**: React Router DOM 7
 - **Build Tool**: Vite
 - **Styling**: CSS with CSS Variables
 - **Deployment**: Vercel
@@ -29,17 +71,33 @@ Modern, responsive website for Column Five agency featuring a minimalist dark th
 ```
 src/
 ├── components/
-│   ├── Header.jsx       # Fixed navigation header
-│   ├── Hero.jsx         # Hero section with glass orb
-│   ├── Logos.jsx        # Client logos showcase
-│   ├── Services.jsx     # Capabilities/services grid
-│   ├── Work.jsx         # Featured work portfolio
-│   ├── Footer.jsx       # Contact form and footer
-│   └── Floaters.jsx     # Background gradient effects
-├── App.jsx              # Main app component
-├── index.css            # Global styles
-└── main.jsx             # Entry point
+│   └── Header.jsx          # Navigation with React Router links
+├── pages/
+│   ├── Home.jsx           # Landing page with hero and featured content
+│   ├── Services.jsx       # Complete service catalog
+│   ├── Work.jsx           # Portfolio of case studies
+│   ├── About.jsx          # Company info and values
+│   └── Contact.jsx        # Contact form and details
+├── App.jsx                # Router configuration
+├── index.css              # Global styles and page-specific CSS
+└── main.jsx               # Entry point
 ```
+
+## Design System
+
+### Color Palette (Authentic Column Five)
+- Background: `#f7f5e7` (Cream/beige)
+- Cards: `#ffffff` (White)
+- Text Primary: `#1a1a1a` (Near black)
+- Text Secondary: `#666666` (Gray)
+- Accent: `#ff6b35` (Orange)
+- Borders: `rgba(0, 0, 0, 0.1)` (Light gray)
+
+### Typography
+- Font Family: Helvetica Neue, Helvetica, Arial
+- Responsive clamp() sizing
+- Professional weight hierarchy
+- Optimized line-height for readability
 
 ## Local Development
 
@@ -57,25 +115,6 @@ npm run build
 npm run preview
 ```
 
-## Design Features
-
-### Glass Morphism Orb
-- Animated shimmer effect
-- Layered gradients and shadows
-- Conic gradient backgrounds
-
-### Color System
-- Background: `#030303`
-- Cards: `#0a0a0a`
-- Text Primary: `#ffffff`
-- Text Secondary: `#888888`
-- Borders: `rgba(255, 255, 255, 0.1)`
-
-### Typography
-- Font Family: Helvetica Neue, Helvetica, Arial
-- Responsive clamp() sizing
-- Negative letter spacing for premium feel
-
 ## Deployment
 
 The site is automatically deployed to Vercel on every push to the main branch.
@@ -85,6 +124,23 @@ To manually deploy:
 vercel --prod
 ```
 
+## About Column Five
+
+**Founded**: 2009
+**Founders**: Jason Lankow, Ross Crooks, Josh Ritchie
+**Location**: Newport Beach, California
+**Team**: ~50 employees
+**Focus**: B2B SaaS marketing and content
+
+### Company Values
+- Be Curious
+- Do Good Work
+- Embrace Diversity
+- Act Courageously
+- Be Good to Each Other
+
 ## License
 
-© 2024 COLUMN FIVE. ALL RIGHTS RESERVED.
+This is a demonstration clone of Column Five Media's website. All content and branding belong to Column Five Media.
+
+© 2024 Column Five Media. All Rights Reserved.
